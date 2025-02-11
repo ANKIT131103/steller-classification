@@ -1,40 +1,47 @@
-# steller-classification
-##Project Overview
-This project aims to develop a classification model that can accurately identify celestial objects—specifically stars, galaxies, and quasars—based on their spectral characteristics. Using a dataset of 100,000 observations from the Sloan Digital Sky Survey (SDSS), the model will be trained to differentiate between these objects and generalize well to new, unseen data, providing reliable predictions for new observations.
-##Source
-Sloan Digital Sky Survey (SDSS): A comprehensive survey of space, providing detailed imaging and spectroscopic data of celestial objects.
-##Description
-Total Observations: 100,000
-Features: Spectral characteristics of celestial objects.
-Classes:
-Stars
-Galaxies
-Quasars
-Celestial-Object-Classification/
-│
-├── data/
-│   ├── raw/                      # Raw dataset from SDSS
-│   ├── processed/                # Preprocessed dataset ready for modeling
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb # Exploratory data analysis
-│   ├── 02_data_preprocessing.ipynb # Data cleaning and preprocessing
-│   ├── 03_model_training.ipynb   # Model training and evaluation
-│   ├── 04_model_testing.ipynb    # Testing model on unseen data
-│
-├── src/
-│   ├── data_preprocessing.py     # Data preprocessing scripts
-│   ├── model_training.py         # Model training scripts
-│   ├── model_evaluation.py       # Model evaluation scripts
-│   ├── utils.py                  # Utility functions
-│
-├── models/
-│   ├── trained_model.pkl         # Trained model file
-│
-├── README.md                     # Project overview and instructions
-├── requirements.txt              # Required packages and dependencies
-├── setup.py                      # Package setup script
-│
-└── .gitignore                    # Files and directories to be ignored by git
+# 🌌 Celestial Object Classification 🚀
 
-uses differnet differnt CLASSIFIER for training
+This project aims to develop a **classification model** that accurately identifies celestial objects—specifically **stars, galaxies, and quasars**—based on their **spectral characteristics**. Using a dataset of **100,000 observations** from the **Sloan Digital Sky Survey (SDSS)**, the model is trained to differentiate between these celestial objects, ensuring **high accuracy and generalization** for new, unseen data.
+
+## 🔭 Data Source
+**Sloan Digital Sky Survey (SDSS)** – A comprehensive survey of space, providing detailed **imaging and spectroscopic data** of celestial objects.
+
+## 📊 Dataset Description
+- **Total Observations:** 100,000
+- **Features:** Spectral characteristics of celestial objects
+- **Classes:**
+  - ⭐ **Stars**
+  - 🌌 **Galaxies**
+  - 💫 **Quasars**
+
+
+## 🏆 Classification Models Used
+This project explores multiple classifiers to achieve the best results:
+- **Random Forest Classifier** 🌲
+- **Support Vector Machine (SVM)** 📈
+- **K-Nearest Neighbors (KNN)** 📍
+- **Gradient Boosting Machines (GBM)** ⚡
+- **Neural Networks (MLP)** 🧠
+
+## 🚀 Getting Started
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/celestial-object-classification.git
+```
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3️⃣ Run the Notebook
+```bash
+jupyter notebook notebooks/01_data_exploration.ipynb
+```
+
+## 📊 Applications
+🔹 **Astrophysics Research** – Improve classification of celestial objects in space.
+🔹 **Automated Space Observation** – Help telescopes identify objects in real-time.
+🔹 **Machine Learning in Astronomy** – Leverage AI for space discovery!
+
+
+
+💡 *Unravel the mysteries of the universe with data!* ✨🚀
+
